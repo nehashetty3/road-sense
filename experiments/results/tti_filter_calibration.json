@@ -1,0 +1,200 @@
+{
+  "weights": {
+    "bias": -1.898586,
+    "ode_term": 0.562549,
+    "topology_term": -0.155054,
+    "surprise_term": 0.673532,
+    "noise_penalty": -0.673944
+  },
+  "samples": [
+    {
+      "label": 0,
+      "ode_term": 0.3515,
+      "topology_term": 0.4988,
+      "surprise_term": -0.2909,
+      "noise_penalty": 0.0357,
+      "loc": "chennai",
+      "trace_type": "normal"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.8303,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.3128,
+      "loc": "chennai",
+      "trace_type": "drunk"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.5461,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.0923,
+      "loc": "chennai",
+      "trace_type": "fault"
+    },
+    {
+      "label": 1,
+      "ode_term": 1.0,
+      "topology_term": 0.5251,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.0503,
+      "loc": "chennai",
+      "trace_type": "wrongway"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.7306,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.1971,
+      "loc": "chennai",
+      "trace_type": "construction"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.509,
+      "surprise_term": -0.2106,
+      "noise_penalty": 0.0407,
+      "loc": "la",
+      "trace_type": "normal"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.8215,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.2991,
+      "loc": "la",
+      "trace_type": "drunk"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.5461,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.094,
+      "loc": "la",
+      "trace_type": "fault"
+    },
+    {
+      "label": 1,
+      "ode_term": 1.0,
+      "topology_term": 0.5188,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.0508,
+      "loc": "la",
+      "trace_type": "wrongway"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.7428,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.1983,
+      "loc": "la",
+      "trace_type": "construction"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.5068,
+      "surprise_term": -0.272,
+      "noise_penalty": 0.0431,
+      "loc": "dc",
+      "trace_type": "normal"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.8299,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.3105,
+      "loc": "dc",
+      "trace_type": "drunk"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.5452,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.0924,
+      "loc": "dc",
+      "trace_type": "fault"
+    },
+    {
+      "label": 1,
+      "ode_term": 1.0,
+      "topology_term": 0.5168,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.0504,
+      "loc": "dc",
+      "trace_type": "wrongway"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.7401,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.1944,
+      "loc": "dc",
+      "trace_type": "construction"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.6536,
+      "surprise_term": -0.1517,
+      "noise_penalty": 0.5786,
+      "loc": "us101",
+      "trace_type": "real_normal"
+    },
+    {
+      "label": 1,
+      "ode_term": 1.0,
+      "topology_term": 0.7104,
+      "surprise_term": 1.0,
+      "noise_penalty": 0.5625,
+      "loc": "us101",
+      "trace_type": "real_wrongway"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.6535,
+      "surprise_term": 0.9951,
+      "noise_penalty": 0.5634,
+      "loc": "us101",
+      "trace_type": "real_construction"
+    },
+    {
+      "label": 1,
+      "ode_term": 1.0,
+      "topology_term": 0.6536,
+      "surprise_term": -0.1517,
+      "noise_penalty": 0.5786,
+      "loc": "us101",
+      "trace_type": "real_short_wrongway"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.6591,
+      "surprise_term": -0.1517,
+      "noise_penalty": 0.579,
+      "loc": "us101",
+      "trace_type": "real_lane_confused"
+    },
+    {
+      "label": 0,
+      "ode_term": 1.0,
+      "topology_term": 0.6536,
+      "surprise_term": -0.1517,
+      "noise_penalty": 0.5786,
+      "loc": "us101",
+      "trace_type": "real_stop_reverse"
+    }
+  ]
+}

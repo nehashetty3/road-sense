@@ -1,0 +1,7 @@
+{
+  "bias": -1.898586,
+  "ode_term": 0.562549,
+  "topology_term": -0.155054,
+  "surprise_term": 0.673532,
+  "noise_penalty": -0.673944
+}

@@ -1,0 +1,32 @@
+{
+  "location_key": "us101",
+  "label": "US-101 NGSIM, Los Angeles",
+  "road_direction": 130.0,
+  "count": 4,
+  "traces": [
+    {
+      "rank": 1,
+      "vehicle_id": 1835,
+      "seconds": 2222,
+      "path": "external_data/ngsim/curated/us101/trace_01_vehicle_1835.csv"
+    },
+    {
+      "rank": 2,
+      "vehicle_id": 1926,
+      "seconds": 2214,
+      "path": "external_data/ngsim/curated/us101/trace_02_vehicle_1926.csv"
+    },
+    {
+      "rank": 3,
+      "vehicle_id": 1762,
+      "seconds": 2202,
+      "path": "external_data/ngsim/curated/us101/trace_03_vehicle_1762.csv"
+    },
+    {
+      "rank": 4,
+      "vehicle_id": 1937,
+      "seconds": 2214,
+      "path": "external_data/ngsim/curated/us101/trace_04_vehicle_1937.csv"
+    }
+  ]
+}

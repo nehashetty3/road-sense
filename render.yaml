@@ -1,0 +1,18 @@
+services:
+  - type: web
+    name: swarmmind-safety-net
+    runtime: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: uvicorn simulation_engine:app --host 0.0.0.0 --port $PORT
+    healthCheckPath: /health
+    autoDeploy: true
+    envVars:
+      - key: SWARMMIND_ENV
+        value: production
+      - key: SWARMMIND_STRICT_STARTUP
+        value: "false"
+      - key: SWARMMIND_ALLOW_SQLITE_IN_PRODUCTION
+        value: "true"
+      - key: SWARMMIND_AUTH_MODE
+        value: disabled

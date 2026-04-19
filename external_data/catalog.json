@@ -1,0 +1,125 @@
+{
+  "datasets": [
+    {
+      "id": "microsoft_geolife_gps",
+      "title": "Microsoft GeoLife Raw GPS Trajectories",
+      "category": "raw_gps",
+      "status": "adapter_ready_download_required",
+      "local_path": "external_data/geolife/",
+      "source_url": "https://www.microsoft.com/en-us/download/details.aspx?id=52367",
+      "purpose": "Raw GPS trajectory validation independent from video-derived NGSIM trajectories.",
+      "repo_tasks": [
+        "Download GeoLife from Microsoft",
+        "Stage it with external_data/scripts/prepare_geolife.py",
+        "Use raw GPS traces as non-crash mobility negatives and calibration checks"
+      ]
+    },
+    {
+      "id": "fhwa_ngsim_us101",
+      "title": "FHWA NGSIM US-101",
+      "category": "real_traffic",
+      "status": "ready",
+      "local_path": "external_data/ngsim/us101/",
+      "source_url": "https://www.fhwa.dot.gov/publications/research/operations/07030/index.cfm",
+      "purpose": "Real multi-vehicle freeway trajectories for evaluation and validation.",
+      "repo_tasks": [
+        "Convert raw trajectory columns into SwarmMind trace schema",
+        "Sample 5-10 minute clips for benchmark runs",
+        "Use in evaluation slide and README"
+      ]
+    },
+    {
+      "id": "real_labeled_wrongway_events",
+      "title": "Partner / DOT Labeled Wrong-Way Events",
+      "category": "real_labeled_events",
+      "status": "adapter_ready_restricted_data_required",
+      "local_path": "external_data/labeled_events/",
+      "source_url": "restricted_partner_or_dot_source",
+      "purpose": "Permitted real wrong-way traces for non-synthetic event validation.",
+      "repo_tasks": [
+        "Import permitted CSVs with external_data/scripts/import_labeled_trace.py",
+        "Run the benchmark report after staging real labeled events",
+        "Upgrade validation tier only after trace provenance is documented"
+      ]
+    },
+    {
+      "id": "fhwa_ngsim_i80",
+      "title": "FHWA NGSIM I-80",
+      "category": "real_traffic",
+      "status": "planned",
+      "local_path": "external_data/ngsim/i80/",
+      "source_url": "https://www.fhwa.dot.gov/publications/research/operations/06137/",
+      "purpose": "Second freeway validation source with merge behavior and congestion.",
+      "repo_tasks": [
+        "Use as additional real-world validation set",
+        "Benchmark baseline vs TTI stack on a second corridor"
+      ]
+    },
+    {
+      "id": "osm_hotspots",
+      "title": "OpenStreetMap / Overpass Hotspot Geometry",
+      "category": "gis",
+      "status": "ready",
+      "local_path": "external_data/osm/",
+      "source_url": "https://wiki.openstreetmap.org/wiki/Overpass_API",
+      "purpose": "Road geometry, oneway tags, cycleways, and lane context for the three demo hotspots.",
+      "repo_tasks": [
+        "Export Anna Salai, I-405, and I-95 geometry to GeoJSON",
+        "Use in Layers 6 and 7 instead of purely synthetic geometry"
+      ]
+    },
+    {
+      "id": "opencellid_hotspots",
+      "title": "OpenCelliD Tower Density",
+      "category": "connectivity",
+      "status": "blocked_api_key",
+      "local_path": "external_data/opencellid/",
+      "source_url": "https://opencellid.org/",
+      "purpose": "Real tower-density support for Layer 9 connectivity scoring.",
+      "repo_tasks": [
+        "Aggregate tower density per hotspot corridor",
+        "Compare synthetic coverage vs real density map"
+      ]
+    },
+    {
+      "id": "wzdx_workzones",
+      "title": "WZDx Work-Zone Feeds",
+      "category": "construction_context",
+      "status": "integration_ready",
+      "local_path": "external_data/wzdx/",
+      "source_url": "https://www.transportation.gov/av/data/wzdx",
+      "purpose": "Real work-zone and closure truth for Layer 7 construction-zone suppression.",
+      "repo_tasks": [
+        "Fetch one corridor feed with external_data/scripts/fetch_wzdx_feed.py",
+        "Overlay active work-zone lines in the app",
+        "Use WZDx presence as real construction context when available"
+      ]
+    },
+    {
+      "id": "ntsb_wrongway_report",
+      "title": "NTSB Wrong-Way Driving Study",
+      "category": "safety_context",
+      "status": "ready_to_cite",
+      "local_path": "external_data/reports/ntsb_wrongway_report.pdf",
+      "source_url": "https://www.ntsb.gov/safety/safety-studies/Pages/SIR1201.aspx",
+      "purpose": "Motivation slide and product-impact grounding.",
+      "repo_tasks": [
+        "Extract one or two statistics for abstract and motivation slide",
+        "Support the 3-second vs 15-second framing"
+      ]
+    },
+    {
+      "id": "rppg_bias_reference",
+      "title": "rPPG Bias / Privacy Literature",
+      "category": "ethics",
+      "status": "ready_to_cite",
+      "local_path": "external_data/reports/rppg_bias_notes.md",
+      "source_url": "https://www.nature.com/articles/s41746-021-00462-z",
+      "purpose": "Ethics note for README, abstract, and demo narrative.",
+      "repo_tasks": [
+        "Add one slide bullet on bias, privacy, and consent",
+        "Document rPPG as non-blocking support signal only"
+      ]
+    }
+  ]
+}
