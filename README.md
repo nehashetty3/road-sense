@@ -242,8 +242,7 @@ Wrong-way incidents and delayed hazard detection are critical contributors to ro
     K[Collision Cloud]
     L[V2X Alerts]
 
-    A --> B --> C --> D --> E --> F --> G --> H --> I --> J --> K --> L
-```
+
 
 ---
 
@@ -279,31 +278,8 @@ SwarmMind/
 └── tests/
 ```
 
----
 
-## Quick Start
 
-**Run Full System**
-```bash
-bash run.sh
-```
-
-**Start Backend**
-```bash
-uvicorn simulation_engine:app --reload
-```
-
-**Start UI**
-```bash
-streamlit run ui_toolbox3_panel.py
-```
-
-**Run Experiments**
-```bash
-python3 experiments/exp_1_baseline.py
-python3 experiments/exp_2_lnn_ode.py
-python3 experiments/exp_3_full_stack.py
-```
 
 ---
 
@@ -330,9 +306,7 @@ Wrong-way driving and delayed hazard detection are major contributors to highway
 
 ---
 
-## Resume-Ready Description
 
-> Built an AI-based traffic safety system that detects wrong-way vehicles, suppresses false positives, predicts collision risks, and propagates V2X alerts using LNNs, Neural ODEs, and trajectory-based anomaly detection. Achieved F1 score of 1.00 with zero false positives on real-world and stress-test datasets.
 
 ---
 
